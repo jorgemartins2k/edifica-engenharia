@@ -163,7 +163,7 @@ body {
 }
 
 .real-logo {
-    max-height: 65px;
+    max-height: 120px;
     /* Impede a logo de ficar "pixelada" limitando seu tamanho maximo */
     width: auto;
     object-fit: contain;
@@ -543,7 +543,7 @@ body {
 }
 
 .footer-logo {
-    max-height: 55px;
+    max-height: 110px;
     margin-bottom: 1rem;
 }
 
