@@ -579,23 +579,30 @@ body {
     }
 
     .real-logo {
-        max-height: 65px;
+        max-height: 45px;
     }
 
     .navbar {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-links {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        align-items: center;
+        gap: 0;
     }
 
     .nav-links a.hover-underline {
-        margin-right: 0;
+        display: none;
+        /* Esconde links auxiliares no celular para economizar espaco vital */
+    }
+
+    .nav-links .btn-glow {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        width: auto;
     }
 
     .about-grid,
