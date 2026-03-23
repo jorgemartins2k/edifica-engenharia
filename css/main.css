@@ -163,7 +163,7 @@ body {
 }
 
 .real-logo {
-    max-height: 50px;
+    max-height: 65px;
     /* Impede a logo de ficar "pixelada" limitando seu tamanho maximo */
     width: auto;
     object-fit: contain;
@@ -326,13 +326,14 @@ body {
     width: 100%;
     height: 350px;
     object-fit: cover;
+    object-position: top center;
     display: block;
-    filter: grayscale(20%);
+    filter: grayscale(10%) contrast(105%);
     transition: all 0.5s;
 }
 
 .socio-card:hover .socio-img {
-    filter: grayscale(0%);
+    filter: grayscale(0%) contrast(110%);
     transform: scale(1.03);
 }
 
@@ -542,7 +543,7 @@ body {
 }
 
 .footer-logo {
-    max-height: 40px;
+    max-height: 55px;
     margin-bottom: 1rem;
 }
 
