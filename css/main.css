@@ -55,7 +55,7 @@ body {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 6vw, 3rem);
     font-weight: 800;
     color: var(--color-text-title);
     line-height: 1.1;
@@ -255,13 +255,13 @@ body {
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     line-height: 1;
     margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
     max-width: 500px;
     margin-bottom: 3rem;
     color: #d0d0d0;
@@ -275,7 +275,7 @@ body {
 }
 
 .glass-stat h4 {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 800;
     color: #fff;
     line-height: 1;
@@ -573,14 +573,26 @@ body {
 
 /* Responsive */
 @media(max-width: 900px) {
-
-    .about-grid,
-    .footer-content {
-        grid-template-columns: 1fr;
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .hero-title {
-        font-size: 3.5rem;
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a.hover-underline {
+        margin-right: 0;
+    }
+
+    .about-grid,
+    .footer-content,
+    .features-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-images-wrapper {
@@ -590,16 +602,41 @@ body {
 
     .socio-card.offset-card {
         margin-top: 0;
-        margin-left: 20px;
+        margin-left: 0;
     }
 
     .hero-glass-stats {
         flex-direction: column;
-        gap: 1rem;
-        align-items: flex-start;
+        gap: 1.5rem;
+        align-items: center;
+        width: 100%;
     }
 
     .glass-div {
         display: none;
+    }
+
+    .premium-service-card {
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 3rem;
+    }
+
+    .hero-cta-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .btn-glow {
+        width: 100%;
+        text-align: center;
     }
 }
