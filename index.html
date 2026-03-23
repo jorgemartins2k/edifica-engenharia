@@ -1,217 +1,275 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Edifica Engenharia - Soluções completas e chave na mão. Inovação com metodologia Master BIM em Itumbiara e região.">
-    <title>Edifica Engenharia | Projetos e Execução Master BIM</title>
+    <meta name="description" content="Edifica Engenharia - Engenharia Exata e Inovação Absoluta com Master BIM.">
+    <title>Edifica Engenharia | Premium</title>
+
+    <!-- Ultra Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- FontAwesome for standard icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons & Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!-- Navbar -->
+    <!-- Premium Glass Header -->
     <header class="header">
         <div class="container navbar">
-            <div class="logo">
-                <span class="logo-edifica">EDIFICA</span>
-                <span class="logo-engenharia">ENGENHARIA</span>
+            <div class="logo-wrapper">
+                <!-- Substitua pelo logo real: salve a imagem que você tem na pasta assets/images/logo.png -->
+                <img src="assets/images/logo.png" alt="Edifica Engenharia" class="real-logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display: none;">
+                    <span class="logo-edifica">EDIFICA</span>
+                    <span class="logo-engenharia">ENGENHARIA</span>
+                </div>
             </div>
             <nav class="nav-links">
-                <a href="#sobre">Quem Somos</a>
-                <a href="#servicos">Especialidades</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#contato" class="btn-primary">Fale Conosco</a>
+                <a href="#sobre" class="hover-underline">Quem Somos</a>
+                <a href="#servicos" class="hover-underline">Especialidades</a>
+                <a href="#portfolio" class="hover-underline">Portfólio</a>
+                <a href="#contato" class="btn-glow">Fale Conosco</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Ultra Premium Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title">Engenharia Exata.<br> <span class="text-gradient">Inovação Absoluta.</span></h1>
-            <p class="hero-subtitle">Soluções completas e desenvolvimento de obras com metodologia Master BIM. Transparência financeira e prazos rigorosamente estipulados em Itumbiara e região.</p>
-            <div class="hero-cta">
-                <a href="#portfolio" class="btn-primary">Ver Projetos</a>
-                <a href="#sobre" class="btn-outline">Conheça os Sócios</a>
+        <!-- Background Element -->
+        <div class="hero-bg-wrapper">
+            <img src="assets/images/residencial.png" alt="Render de Fundo" class="hero-bg-image">
+            <div class="hero-gradient-overlay"></div>
+        </div>
+
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <p class="hero-pre-title">MASTER BIM & EXECUÇÃO</p>
+            <h1 class="hero-title">A Engenharia levada <br><span class="text-gold">à pura exatidão.</span></h1>
+            <p class="hero-subtitle">Inovação, transparência financeira e soluções pontuais entregues diretamente ao
+                alto padrão de Itumbiara-GO e região.</p>
+            <div class="hero-cta-group">
+                <a href="#portfolio" class="btn-glow">Explore o Portfólio <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Precisão BIM</span>
+
+            <!-- Glassmorphism Stats -->
+            <div class="hero-glass-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="glass-stat">
+                    <h4>BIM 3D</h4>
+                    <p>Precisão Milimétrica</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">Chave</span>
-                    <span class="stat-label">Na Mão</span>
+                <div class="glass-div"></div>
+                <div class="glass-stat">
+                    <h4>100%</h4>
+                    <p>Chave na Mão</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">Zero</span>
-                    <span class="stat-label">Atraso</span>
+                <div class="glass-div"></div>
+                <div class="glass-stat">
+                    <h4>0</h4>
+                    <p>Atraso na Entrega</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Nós -->
+    <!-- Premium Configured Sobre Nós -->
     <section class="about section" id="sobre">
         <div class="container about-grid">
-            <div class="about-text">
-                <h2 class="section-title">Nossa <span class="text-gradient">Essência</span></h2>
-                <div class="about-card">
-                    <p class="highlight-text">Uma nova geração da engenharia, unindo tecnologia de ponta e conhecimento sólido para viabilizar seus sonhos e investimentos.</p>
-                    <p>A Edifica Engenharia é liderada pelos engenheiros <strong>Felipe Henrique</strong> e <strong>Felype Alves</strong>, ambos formados pela prestigiada UNIUBE e pós-graduandos em Master BIM: Ferramentas de Gestão e Projeto no IPOG.</p>
-                    <p>Somos dois jovens com novas ideias e vários cursos na área, sempre em busca de conhecimento para inovar o mercado. Dominamos desde o conceito arquitetônico até o projeto hidrossanitário e execução final, garantindo que todas as engrenagens da sua obra funcionem em perfeita harmonia, eliminando falhas de comunicação e custos extras.</p>
-                    
-                    <ul class="diferenciais-list">
-                        <li><i class="fa-solid fa-check"></i> Entrega no prazo estipulado</li>
-                        <li><i class="fa-solid fa-check"></i> Transparência financeira real</li>
-                        <li><i class="fa-solid fa-check"></i> Atendimento focado no cliente (Famílias e Investidores)</li>
-                    </ul>
+            <div class="about-images-wrapper">
+                <!-- Sócios Pictures -->
+                <div class="socio-card" data-aos="fade-right">
+                    <img src="assets/images/felipe.png" alt="Eng. Felipe Henrique" class="socio-img"
+                        onerror="this.src='https://via.placeholder.com/400x500/111/C9A84C?text=Foto+Felipe'">
+                    <div class="socio-info glass-panel">
+                        <h3>Felipe Henrique</h3>
+                        <p>Eng. Civil | Master BIM</p>
+                    </div>
+                </div>
+                <div class="socio-card offset-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/felype.png" alt="Eng. Felype Alves" class="socio-img"
+                        onerror="this.src='https://via.placeholder.com/400x500/111/C9A84C?text=Foto+Felype'">
+                    <div class="socio-info glass-panel">
+                        <h3>Felype Alves</h3>
+                        <p>Eng. Civil | Master BIM</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-image-card">
-                <div class="image-placeholder gradient-glow">
-                    <!-- Aqui o sistema pode futuramente injetar as fotos reais de Filipe e Felype -->
-                    <div class="socios-badge">
-                        <i class="fa-solid fa-user-tie"></i>
-                        <h3>Felipe & Felype</h3>
-                        <span>Engenheiros / Master BIM</span>
+
+            <div class="about-text" data-aos="fade-left">
+                <h2 class="section-title">Uma Nova <span class="text-gold">Visão</span> <br>da Engenharia</h2>
+                <div class="accent-line"></div>
+                <p class="leading-text">Somos dois jovens em constante busca pelo que há de mais moderno. Liderada pelos
+                    Engenheiros Civis Felipe Henrique e Felype Alves (ambos formados pela UNIUBE e pós-graduandos em
+                    Master BIM pelo IPOG), a Edifica Engenharia existe para inovar.</p>
+                <p>Dominamos a cadeia completa: do desenho arquitetônico ao planejamento estrutural, elétrico e
+                    hidrossanitário. Essa multiespecialização garante que sua obra nunca sofrerá com "falhas de
+                    comunicação" entre equipes.</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Pontualidade Extrema</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span>Transparência Real</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-cubes"></i>
+                        <span>Tecnologia BIM</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Atendimento Premium</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Serviços -->
-    <section class="services section bg-darker" id="servicos">
+    <!-- Premium Services Slider -->
+    <section class="services section bg-darkest" id="servicos">
         <div class="container text-center">
-            <h2 class="section-title">Soluções <span class="text-gradient">360º</span></h2>
-            <p class="section-desc">Atuamos em todas as frentes necessárias para tornar seu projeto uma realidade sólida, atendendo famílias, investidores, e o poder público.</p>
+            <h2 class="section-title" data-aos="fade-up">Soluções <span class="text-gold">Inteligentes</span></h2>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">Uma esteira completa de serviços de alto
+                padrão.</p>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
-                    <h3>Execução de Obras</h3>
-                    <p>Soluções completas no modelo "chave na mão". Você imagina e nós entregamos pronto para morar ou lucrar.</p>
+            <div class="premium-services-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="premium-service-card">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3>Execução Integral</h3>
+                    <p>Obras residenciais e corporativas "chave na mão". Gestão absoluta do canteiro para investidores e
+                        famílias.</p>
+                    <div class="card-glow"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <div class="premium-service-card">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
                     <h3>Projetos Arquitetônicos</h3>
-                    <p>Design moderno aliado à funcionalidade para casas, galpões corporativos e espaços públicos.</p>
+                    <p>Sofisticação e layout moderno que garantem conforto e valorização imediata do imóvel.</p>
+                    <div class="card-glow"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
-                    <h3>Projetos Estruturais</h3>
-                    <p>Cálculo estrutural preciso, garantindo segurança total da fundação até o telhado, sem desperdício de aço.</p>
+                <div class="premium-service-card">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3>Engenharia Estrutural</h3>
+                    <p>Cálculo minucioso para estruturas otimizadas, seguras e sem desperdício de aço ou concreto.</p>
+                    <div class="card-glow"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <h3>Método Master BIM</h3>
-                    <p>Integração de projetos em 3D que prevê conflitos e orça milimetricamente antes da obra começar.</p>
+                <div class="premium-service-card"
+                    style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto; width: 100%;">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Metodologia Master BIM</h3>
+                    <p>Modelamos 100% da sua obra em 3D antes de um único tijolo ser assentado. Identificação prévia de
+                        conflitos (clashes) que salva milhares de reais do seu orçamento.</p>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfólio / Projetos -->
+    <!-- Super Premium Portfolio Carousel -->
     <section class="portfolio section" id="portfolio">
         <div class="container">
-            <div class="portfolio-header">
-                <div>
-                    <h2 class="section-title">Casos de <span class="text-gradient">Sucesso</span></h2>
-                    <p class="section-desc text-left">Obras que marcaram nosso histórico de precisão e qualidade na região de Itumbiara-GO.</p>
-                </div>
-            </div>
+            <h2 class="section-title text-center" data-aos="fade-up">Obras de <span class="text-gold">Arte</span></h2>
+            <div class="accent-line center-line" data-aos="fade-up" data-aos-delay="100"></div>
 
-            <div class="portfolio-grid">
-                <!-- Projeto 1: Casa Alto Padrão -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="assets/images/residencial.png" alt="Residência de Alto Padrão">
-                        <div class="badge">Residencial</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Casa de Alto Padrão</h3>
-                        <p>Realização do sonho de uma família: arquitetura moderna, com fachada em balanço e execução 100% "chave na mão". Sem dores de cabeça para o cliente.</p>
-                    </div>
-                </div>
+            <!-- Swiper -->
+            <div class="swiper portfolioSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
 
-                <!-- Projeto 2: Galpão -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="assets/images/galpao.png" alt="Galpão Logístico">
-                        <div class="badge">Corporativo</div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-item-premium">
+                            <img src="assets/images/residencial.png" alt="Residencial Padrão Ouro">
+                            <div class="portfolio-item-overlay glass-panel">
+                                <span class="tag">Residencial Premium</span>
+                                <h3>Casa Conceito A</h3>
+                                <p>Solução arquitetônica e execução de alto padrão. Minimalismo, vãos livres e
+                                    esquadrias imponentes.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h3>Galpão Logístico Industrial</h3>
-                        <p>Projeto para grandes empresas que necessitam de amplitude. Racionalização de estrutura metálica reduzindo custos com segurança.</p>
-                    </div>
-                </div>
 
-                <!-- Projeto 3: BIM Estrutural -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="assets/images/bim.png" alt="Modelo BIM">
-                        <div class="badge">Tecnologia BIM</div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-item-premium">
+                            <img src="assets/images/galpao.png" alt="Galpão Tecnológico">
+                            <div class="portfolio-item-overlay glass-panel">
+                                <span class="tag">Corporativo</span>
+                                <h3>Centro Logístico</h3>
+                                <p>Engenharia metálica levada ao limite para grandes armazenagens, unindo rapidez de
+                                    execução e segurança.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h3>Compatibilização BIM 3D</h3>
-                        <p>Projeto predial compatibilizado em BIM (Estrutura, Elétrica e Hidrossanitário). Resultado: Zero retrabalho na execução e antecipação de problemas.</p>
+
+                    <div class="swiper-slide">
+                        <div class="portfolio-item-premium">
+                            <img src="assets/images/bim.png" alt="Estrutural BIM">
+                            <div class="portfolio-item-overlay glass-panel">
+                                <span class="tag">Master BIM</span>
+                                <h3>Twin Digital BIM</h3>
+                                <p>Visão de raio-X de um projeto compatibilizado da Edifica. A exatidão que gera
+                                    economia astronômica na obra.</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
-    <!-- Banner CTA -->
-    <section class="cta-banner">
-        <div class="container text-center">
-            <h2>Construa com a <span class="text-gradient">Engenharia do Futuro</span></h2>
-            <p>Seu projeto merece a atenção, a transparência e a expertise de quem domina as tecnologias modernas.</p>
-            <a href="#contato" class="btn-primary btn-large">Comece seu Projeto Agora</a>
+    <!-- CTA & Footer -->
+    <footer class="footer-premium" id="contato">
+        <div class="footer-cta" data-aos="zoom-in">
+            <h2>Pronto para construir o seu legado com <span class="text-gold">exatidão?</span></h2>
+            <a href="https://wa.me/5564999999999" class="btn-glow large">Fale com os Engenheiros</a>
         </div>
-    </section>
 
-    <!-- Contato e Rodapé -->
-    <footer class="footer bg-darker" id="contato">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="logo-edifica">EDIFICA</span>
-                    <span class="logo-engenharia">ENGENHARIA</span>
-                </div>
-                <p class="brand-desc">Desenvolvimento e execução de obras com precisão máxima através da metodologia BIM em Itumbiara e Região.</p>
-                <div class="socials">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <img src="assets/images/logo.png" alt="Edifica Logo" class="footer-logo"
+                    onerror="this.style.display='none'">
+                <p>Nós dominamos a engenharia. Você desfruta do resultado perfeito.</p>
             </div>
-            
-            <div class="footer-contact">
-                <h3>Entre em Contato</h3>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Itumbiara - GO</li>
-                    <li><i class="fa-solid fa-envelope"></i> contato@edificaengenharia.com</li>
-                    <li><i class="fa-solid fa-phone"></i> (64) 99999-9999</li>
-                </ul>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Itumbiara, Goiás</p>
+                <p><i class="fa-solid fa-envelope"></i> projetos@edifica.eng.br</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (64) 99999-9999</p>
             </div>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 Edifica Engenharia. Todos os direitos reservados. CREA/CAU a definir.</p>
+        <div class="footer-legal">
+            <p>&copy; 2026 Edifica Engenharia. Desenvolvido no padrão de excelência.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/5564999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
+    <!-- Scripts -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- AOS Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
