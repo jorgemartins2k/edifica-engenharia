@@ -573,6 +573,15 @@ body {
 
 /* Responsive */
 @media(max-width: 900px) {
+    .header {
+        position: absolute;
+        padding: 1rem 0;
+    }
+
+    .real-logo {
+        max-height: 65px;
+    }
+
     .navbar {
         flex-direction: column;
         gap: 1rem;
